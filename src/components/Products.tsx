@@ -36,7 +36,7 @@ const ProductsSectionFr: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* En-tête de la Section */}
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-amber-700 uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-[#3dcac4] uppercase tracking-wider mb-2">
             Notre Offre
           </p>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
@@ -58,7 +58,7 @@ const ProductsSectionFr: React.FC = () => {
               className="group flex flex-col items-center text-center p-8 bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02]"
             >
               {/* Icône / Placeholder */}
-              <div className="mb-6 w-16 h-16 flex items-center justify-center bg-amber-700 rounded-full text-4xl shadow-md transition duration-300 group-hover:bg-black">
+              <div className="mb-6 w-16 h-16 flex items-center justify-center bg-[#3dcac4] rounded-full text-4xl shadow-md transition duration-300 group-hover:bg-black">
                 {/* Utilisation d'un emoji comme icône */}
                 <span role="img" aria-label={product.title}>
                   {product.icon}
@@ -74,7 +74,7 @@ const ProductsSectionFr: React.FC = () => {
               <p className="text-gray-600">{product.description}</p>
 
               {/* Bouton d'action (Placeholder) */}
-              <button className="mt-6 text-sm font-medium text-amber-700 hover:text-black transition duration-300 border-b border-amber-700 hover:border-black pb-1">
+              <button className="mt-6 text-sm font-medium text-[#3dcac4] hover:text-black transition duration-300 border-b border-[#3dcac4] hover:border-black pb-1">
                 Découvrir l'offre →
               </button>
             </div>

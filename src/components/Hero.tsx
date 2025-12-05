@@ -85,7 +85,7 @@ const HeroSlider: React.FC = () => {
       >
         <div className="max-w-xl p-5 md:p-0 opacity-100 transition duration-500">
           {/* Le bandeau marron clair/ambre (bg-amber-700) */}
-          <div className="bg-amber-700 text-black py-2 px-4 text-xs font-bold tracking-widest uppercase inline-block mb-4 md:mb-5">
+          <div className="bg-[#3dcac4] text-black py-2 px-4 text-xs font-bold tracking-widest uppercase inline-block mb-4 md:mb-5">
             {currentSlide.subtitle}
           </div>
 
@@ -108,7 +108,7 @@ const HeroSlider: React.FC = () => {
           </p>
 
           {/* Bouton CTA (TRADUIT) */}
-          <button className="mt-8 bg-amber-700 text-black font-bold py-3 px-6 hover:bg-amber-600 transition duration-300">
+          <button className="mt-8 bg-[#3dcac4] text-black font-bold py-3 px-6 hover:bg-amber-600 transition duration-300">
             DÉCOUVREZ-EN PLUS
           </button>
         </div>
@@ -121,7 +121,7 @@ const HeroSlider: React.FC = () => {
             key={index}
             className={`w-3 h-3 rounded-full cursor-pointer transition duration-300 ${
               index === currentSlideIndex
-                ? "bg-amber-700"
+                ? "bg-[#3dcac4]"
                 : "bg-gray-400 opacity-70 hover:bg-white"
             }`}
             onClick={() => setCurrentSlideIndex(index)}

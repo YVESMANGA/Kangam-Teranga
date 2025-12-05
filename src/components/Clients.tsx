@@ -14,9 +14,9 @@ interface TestimonialData {
 const clientTestimonial: TestimonialData = {
   quote:
     "Nous avons été vraiment impressionnés par le professionnalisme de l'équipe et son souci du détail. De la consultation initiale à la remise finale, tout a été livré dans les délais et avec une qualité exceptionnelle. Le projet a dépassé nos attentes. Nous planifions déjà notre prochaine collaboration.",
-  clientName: "Snoeck Metalen",
-  clientTitle: "Atlas: Nachtergale - Belgique",
-  clientLocation: "Belgique",
+  clientName: "Moussa Diop",
+  clientTitle: "PDG AgroShop",
+  clientLocation: "Senegal",
   // L'image de l'avatar est supposée être dans le dossier 'public'
   avatarSrc: "/c.jpg",
 };
@@ -47,7 +47,7 @@ const TestimonialsSectionFr: React.FC = () => {
         <div className="lg:w-1/2 lg:pl-20 relative pt-8 lg:pt-0">
           {/* Étiquette "CE QUE NOS CLIENTS DISENT" */}
           <div className="inline-block bg-black py-2 px-4 relative z-0 mb-8 rounded">
-            <div className="absolute top-0 left-0 w-full h-full bg-amber-700 transform translate-x-1 translate-y-1 -z-10 rounded"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[#3dcac4] transform translate-x-1 translate-y-1 -z-10 rounded"></div>
             <p className="text-xs font-semibold text-white tracking-widest uppercase relative z-10">
               CE QUE NOS CLIENTS DISENT
             </p>
@@ -69,7 +69,7 @@ const TestimonialsSectionFr: React.FC = () => {
           {/* --- Carte de Témoignage --- */}
           <div className="relative p-6 bg-white rounded-lg shadow-xl border border-gray-100">
             {/* Ligne décorative ambre à gauche du texte */}
-            <div className="hidden lg:block absolute left-0 top-0 h-full w-1 bg-amber-700 rounded-l-lg"></div>
+            <div className="hidden lg:block absolute left-0 top-0 h-full w-1 bg-[#3dcac4] rounded-l-lg"></div>
 
             {/* Conteneur pour la citation */}
             <div className="pb-6 border-b border-gray-200">
@@ -85,7 +85,7 @@ const TestimonialsSectionFr: React.FC = () => {
                 <img
                   src={clientTestimonial.avatarSrc}
                   alt={`Avatar de ${clientTestimonial.clientName}`}
-                  className="w-12 h-12 rounded-full object-cover mr-4 ring-2 ring-amber-700"
+                  className="w-12 h-12 rounded-full object-cover mr-4 ring-2 ring-[#3dcac4]"
                 />
 
                 {/* Nom et Titre */}
@@ -101,7 +101,7 @@ const TestimonialsSectionFr: React.FC = () => {
 
               {/* Points de Navigation (Navigation des témoignages) */}
               <div className="flex space-x-2">
-                <div className="w-3 h-3 bg-amber-700 rounded-full"></div>
+                <div className="w-3 h-3 bg-[#3dcac4] rounded-full"></div>
                 <div className="w-3 h-3 bg-gray-300 rounded-full cursor-pointer hover:bg-black transition"></div>
                 <div className="w-3 h-3 bg-gray-300 rounded-full cursor-pointer hover:bg-black transition"></div>
               </div>

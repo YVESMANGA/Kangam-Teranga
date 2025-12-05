@@ -28,7 +28,7 @@ const FooterLink: React.FC<{ label: string; href: string }> = ({
   <a
     href={href}
     // Changement ici: hover:text-amber-700
-    className="flex items-center text-gray-400 hover:text-amber-700 transition mb-2 text-sm"
+    className="flex items-center text-gray-400 hover:text-[#3dcac4] transition mb-2 text-sm"
   >
     {/* Décorateur ambre: text-amber-700 */}
     <span className="text-amber-700 mr-2 text-lg font-bold">›</span>
@@ -46,10 +46,10 @@ const FooterFr: React.FC = () => {
         <div className="flex flex-col items-start space-y-4">
           <div className="flex items-center">
             {/* Logo BuildNest: bg-amber-700 */}
-            <div className="bg-amber-700 w-8 h-8 flex items-center justify-center mr-2">
-              <span className="text-black font-bold text-xl">T</span>
+            <div className=" w-15 h-15 flex items-center justify-center mr-2">
+              <img src="/logo.png" alt="" />
             </div>
-            <h3 className="text-xl font-bold">Teranga Ressource Solutions</h3>
+            <h3 className="text-xl font-bold">Teranga Ressource Sevices</h3>
           </div>
           <p className="text-xs text-gray-400 uppercase tracking-wider">
             Force. Structure. Stabilité.
@@ -59,7 +59,7 @@ const FooterFr: React.FC = () => {
         {/* Colonne 2 & 3: Adresse & Contact */}
         <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Bloc Adresse: border-amber-700 */}
-          <div className="flex items-center bg-gray-900 p-4 border-l-4 border-amber-700">
+          <div className="flex items-center bg-gray-900 p-4 border-l-4 border-[#3dcac4]">
             {/* Icône: text-amber-700 */}
             <span className="text-amber-700 text-2xl mr-4"></span>
             <div>
@@ -71,11 +71,11 @@ const FooterFr: React.FC = () => {
           </div>
 
           {/* Bloc Contact: border-amber-700 */}
-          <div className="flex items-center bg-gray-900 p-4 border-l-4 border-amber-700">
+          <div className="flex items-center bg-gray-900 p-4 border-l-4 border-[#3dcac4]">
             {/* Icône: text-amber-700 */}
             <span className="text-amber-700 text-2xl mr-4"></span>
             <div>
-              <p className="font-semibold text-white">+221 77 596 18 69</p>
+              <p className="font-semibold text-white">+221 77 571 19 04</p>
               <p className="text-sm text-gray-400">support.teranga@gmail.com</p>
             </div>
           </div>
@@ -115,13 +115,13 @@ const FooterFr: React.FC = () => {
 
           {/* Icônes Sociales: hover:bg-amber-700 */}
           <div className="flex space-x-3 mt-6">
-            <div className="w-8 h-8 bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-amber-700 transition">
+            <div className="w-8 h-8 bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-[#3dcac4] transition">
               <span className="text-white text-sm">f</span>
             </div>
-            <div className="w-8 h-8 bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-amber-700 transition">
+            <div className="w-8 h-8 bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-[#3dcac4] transition">
               <span className="text-white text-sm">t</span>
             </div>
-            <div className="w-8 h-8 bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-amber-700 transition">
+            <div className="w-8 h-8 bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-[#3dcac4] transition">
               <span className="text-white text-sm">in</span>
             </div>
           </div>
@@ -161,7 +161,7 @@ const FooterFr: React.FC = () => {
               className="py-3 px-4 bg-gray-800 text-white placeholder-gray-500 text-sm focus:outline-none w-full"
             />
             {/* Bouton Newsletter: bg-amber-700 */}
-            <button className="bg-amber-700 text-black w-12 h-12 flex items-center justify-center hover:bg-amber-600 transition">
+            <button className="bg-[#3dcac4] text-black w-12 h-12 flex items-center justify-center hover:bg-amber-600 transition">
               <svg
                 className="w-5 h-5"
                 fill="none"

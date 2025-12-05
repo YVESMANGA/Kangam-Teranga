@@ -84,7 +84,7 @@ const ServicesTitle: React.FC = () => {
     <div className="bg-white pt-16 pb-8 px-4 md:px-12 lg:px-24 text-center">
       {/* Étiquette d'accentuation avec décalage - Utilisation de bg-amber-700 */}
       <div className="inline-block bg-black py-2 px-6 relative z-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-amber-700 transform translate-x-1 translate-y-1 -z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[#3dcac4] transform translate-x-1 translate-y-1 -z-10"></div>
         <p className="text-sm font-semibold text-white tracking-widest uppercase relative z-10">
           NOS SERVICES
         </p>
@@ -118,7 +118,7 @@ const InteractiveServicesSection: React.FC = () => {
   const renderTab = (tab: ServiceTab) => {
     const isActive = activeTab === tab.id;
     // Couleurs d'accentuation mises à jour avec l'ambre
-    const activeClasses = "bg-black text-white border-b-2 border-amber-700";
+    const activeClasses = "bg-black text-white border-b-2 border-[#3dcac4]";
     const inactiveClasses =
       "bg-white text-gray-800 border-b-2 border-gray-200 hover:bg-gray-50 transition duration-150";
 
@@ -138,7 +138,7 @@ const InteractiveServicesSection: React.FC = () => {
   const renderFeature = (feature: string) => (
     <div key={feature} className="flex items-start lg:w-1/2 mb-4">
       {/* Couleur du point mise à jour avec l'ambre */}
-      <span className="text-amber-700 mr-2 text-xl font-bold">›</span>
+      <span className="text-[#3dcac4] mr-2 text-xl font-bold">›</span>
       <p className="text-sm text-gray-700">{feature}</p>
     </div>
   );
@@ -167,7 +167,7 @@ const InteractiveServicesSection: React.FC = () => {
         <div className="lg:w-1/2 pl-0 lg:pl-12 pt-0 lg:pt-8">
           {/* Décoration et Titre (Décoration en ambre) */}
           <div className="flex items-start">
-            <div className="w-1 bg-amber-700 h-16 inline-block mr-4 flex-shrink-0"></div>
+            <div className="w-1 bg-[#3dcac4] h-16 inline-block mr-4 flex-shrink-0"></div>
             <h2 className="text-3xl md:text-4xl font-bold text-black align-top leading-tight">
               {currentServiceData.title}
             </h2>
@@ -184,7 +184,7 @@ const InteractiveServicesSection: React.FC = () => {
           </div>
 
           {/* Bouton "DÉTAIL DU SERVICE" (Couleur Ambre) */}
-          <button className="flex items-center bg-amber-700 text-black font-bold py-3 px-6 mt-8 hover:bg-amber-600 transition duration-300 focus:outline-none">
+          <button className="flex items-center bg-[#3dcac4] text-black font-bold py-3 px-6 mt-8 hover:bg-amber-600 transition duration-300 focus:outline-none">
             DÉTAIL DU SERVICE
             <div className="bg-black w-8 h-8 flex items-center justify-center ml-3">
               <svg

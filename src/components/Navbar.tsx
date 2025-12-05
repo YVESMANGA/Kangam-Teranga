@@ -23,19 +23,19 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-1000 h-20 flex items-center">
       <div className="container mx-auto flex justify-between items-center h-full px-4 lg:px-0">
         {/* Section Logo (fond noir - Reste à gauche) */}
-        <div className="flex items-center bg-black h-full px-4 sm:px-6 flex-shrink-0">
+        <div className="flex items-center bg-white h-full px-4 sm:px-6 flex-shrink-0">
           {/* Le rectangle marron clair (maintenant bg-amber-500) */}
-          <div className="bg-amber-700 w-8 h-8 flex items-center justify-center mr-2">
-            <span className="text-black font-bold text-xl">T</span>
+          <div className=" w-13 h-13 flex items-center justify-center mr-2">
+            <img src="/logo.png" alt="" />
           </div>
 
           {/* Texte du Logo */}
           <div className="hidden sm:block">
-            <div className="text-white text-xl font-bold">
-              Teranga Ressources solutions
+            <div className="text-[#3dcac4] text-xl font-bold">
+              Teranga Ressources Services
             </div>
             <div className="text-gray-400 text-xs mt-1">
-              Strength. Structure. Stability.
+              Force. Structure. Stabilité.
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
               <a
                 href={link.href}
                 // hover:text-amber-500 pour l'effet de survol
-                className="text-black font-semibold text-sm uppercase hover:text-amber-500 transition duration-200"
+                className="text-black font-semibold text-sm uppercase hover:text-[#3dcac4] transition duration-200"
               >
                 {link.label}
               </a>

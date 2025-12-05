@@ -9,17 +9,16 @@ const AboutSection: React.FC = () => {
         {/* --- Colonne de Gauche : Titre et Image --- */}
         <div className="lg:w-1/2 pr-0 lg:pr-12 mb-8 lg:mb-0">
           {/* Étiquette "À PROPOS DE TERANGA RESSOURCES" */}
-          <div className="bg-black inline-block py-1 px-3 mb-4">
-            <p className="text-xs font-semibold text-white tracking-widest uppercase">
+          <div className="bg-[#3dcac4] inline-block py-1 px-3 mb-4">
+            <p className="text-xs font-semibold text-black tracking-widest uppercase">
               À PROPOS DE TERANGA RESSOURCES
             </p>
           </div>
 
           {/* Titre Principal (TRADUIT) */}
           <h1 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
-            Plus Que Des Bâtisseurs —
-            <br />
-            Nous Sommes Partenaires Du Progrès
+            Plus Que Des Extracteurs —             <br />
+            Nous Sommes Les Fondations Du Développement Durable          {" "}
           </h1>
 
           {/* Image (Placeholder) */}
@@ -39,7 +38,7 @@ const AboutSection: React.FC = () => {
             {/* Onglets */}
             <div className="flex mb-6">
               {/* Onglet Actif (Marron Clair/Ambre) */}
-              <button className="bg-amber-700 font-semibold py-2 px-6 text-black mr-2 focus:outline-none">
+              <button className="bg-[#3dcac4] font-semibold py-2 px-6 text-black mr-2 focus:outline-none">
                 Qui Sommes-Nous
               </button>
               {/* Onglet Inactif (Gris Clair) */}
@@ -59,16 +58,15 @@ const AboutSection: React.FC = () => {
 
             {/* Contenu du texte 2 (TRADUIT) */}
             <p className="text-gray-700 leading-relaxed mb-8">
-              Nous construisons des logements collectifs et abordables, des
-              installations industrielles, des établissements de santé publics
-              et privés, des centres de fitness et des immeubles de bureaux.
-              Nous améliorons le processus de gestion de la chaîne
-              d'approvisionnement, augmentons l'efficacité opérationnelle et
-              construisons des environnements qui favorisent la créativité.
+              TERANGA Ressources se positionne. Son ambition est de contribuer
+              activement à la promotion de la valorisations des ressources
+              naturelles locales en proposant des solutions techniques,
+              logistiques et environnementales adaptées aux besoins des
+              exploitations artisanales et industrielles.
             </p>
 
             {/* Bouton "EN SAVOIR PLUS SUR NOUS" (Couleur Marron Clair/Ambre) */}
-            <button className="flex items-center bg-amber-700 text-black font-bold py-3 px-6 hover:bg-amber-600 transition duration-300 focus:outline-none">
+            <button className="flex items-center bg-[#3dcac4] text-black font-bold py-3 px-6 hover:bg-amber-600 transition duration-300 focus:outline-none">
               EN SAVOIR PLUS SUR NOUS
               {/* Icône de flèche */}
               <div className="bg-black w-8 h-8 flex items-center justify-center ml-3">

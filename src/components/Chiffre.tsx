@@ -24,7 +24,7 @@ const CounterCard: React.FC<CounterCardProps> = ({
         {label}
       </p>
       {/* Ligne de séparation en ambre */}
-      <div className="w-12 h-1 bg-amber-700 mb-6"></div>
+      <div className="w-12 h-1 bg-[#3dcac4] mb-6"></div>
       <p
         className={`text-6xl md:text-7xl font-extrabold leading-none ${textColor}`}
       >

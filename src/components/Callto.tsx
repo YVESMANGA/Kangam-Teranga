@@ -40,7 +40,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     // Note: Le sélecteur d'icône est maintenant bg-amber-700
     <div className="flex flex-col items-start p-8 bg-black">
-      <div className="flex items-center justify-center w-16 h-16 mb-6 bg-amber-700">
+      <div className="flex items-center justify-center w-16 h-16 mb-6 bg-[#3dcac4]">
         <IconComponent />
       </div>
       <h3 className="mb-4 text-xl font-bold text-white uppercase">{title}</h3>
