@@ -3,12 +3,11 @@ import React from "react";
 
 // --- Définitions de Données Statiques ---
 const quickLinksFr = [
-  { label: "Acceuil", href: "#" },
-  { label: "À Propos", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Produits", href: "#" },
-  { label: "Témoignages", href: "#" },
-  { label: "Nous Contacter", href: "#" },
+  { label: "Acceuil", href: "/" },
+  { label: "À Propos", href: "/contact" },
+  { label: "Services", href: "/services" },
+  { label: "Produits", href: "/produits" },
+  { label: "Nous Contacter", href: "/contact" },
 ];
 
 const ourServicesFr = [
@@ -31,7 +30,7 @@ const FooterLink: React.FC<{ label: string; href: string }> = ({
     className="flex items-center text-gray-400 hover:text-[#3dcac4] transition mb-2 text-sm"
   >
     {/* Décorateur ambre: text-amber-700 */}
-    <span className="text-amber-700 mr-2 text-lg font-bold">›</span>
+    <span className="text-[#3dcac4] mr-2 text-lg font-bold">›</span>
     {label}
   </a>
 );

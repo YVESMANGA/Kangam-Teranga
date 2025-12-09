@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
           {/* Image (Placeholder) */}
           <div className="mt-8">
             <img
-              src="/a.jpg"
+              src="/a2.webp"
               alt="Chantier de construction avec de grandes poutres en béton et des grues jaunes"
               className="w-full h-auto object-cover rounded-md shadow-lg"
             />

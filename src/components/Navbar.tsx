@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar: React.FC = () => {
@@ -6,12 +7,12 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Acceuil", href: "#" },
-    { label: "A propos", href: "#" },
-    { label: "Services", href: "#" },
-    { label: "Produits", href: "#" },
-    { label: "Partenaires", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Acceuil", href: "/" },
+    { label: "A propos", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Produits", href: "produits" },
+
+    { label: "Contact", href: "/contact" },
   ];
 
   const handleMenuToggle = () => {
@@ -23,22 +24,24 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-1000 h-20 flex items-center">
       <div className="container mx-auto flex justify-between items-center h-full px-4 lg:px-0">
         {/* Section Logo (fond noir - Reste à gauche) */}
-        <div className="flex items-center bg-white h-full px-4 sm:px-6 flex-shrink-0">
-          {/* Le rectangle marron clair (maintenant bg-amber-500) */}
-          <div className=" w-13 h-13 flex items-center justify-center mr-2">
-            <img src="/logo.png" alt="" />
-          </div>
+        <Link href="/">
+          <div className="flex items-center bg-white h-full px-4 sm:px-6 flex-shrink-0">
+            {/* Le rectangle marron clair (maintenant bg-amber-500) */}
+            <div className=" w-13 h-13 flex items-center justify-center mr-2">
+              <img src="/logo.png" alt="" />
+            </div>
 
-          {/* Texte du Logo */}
-          <div className="hidden sm:block">
-            <div className="text-[#3dcac4] text-xl font-bold">
-              Teranga Ressources Services
-            </div>
-            <div className="text-gray-400 text-xs mt-1">
-              Force. Structure. Stabilité.
+            {/* Texte du Logo */}
+            <div className="hidden sm:block">
+              <div className="text-[#3dcac4] text-xl font-bold">
+                Teranga Ressources Services
+              </div>
+              <div className="text-gray-400 text-xs mt-1">
+                Force. Structure. Stabilité.
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Liens de Navigation (Bureau) */}
         <ul className="hidden lg:flex items-center space-x-8 ml-auto">

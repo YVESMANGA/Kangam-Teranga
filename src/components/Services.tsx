@@ -45,7 +45,7 @@ const services: ServiceTab[] = [
       description:
         "Nous assurons tous les travaux préparatoires essentiels à la réussite de votre construction, y compris le terrassement, l'excavation et la gestion des sols. Notre expertise garantit des fondations stables et une préparation optimale du site.",
       imageAlt: "Pelle mécanique travaillant sur un chantier d'excavation.",
-      imageSrc: "/s2.webp",
+      imageSrc: "/a2.webp",
       features: [
         "Excavation Profonde et Déblaiement",
         "Mise à Niveau et Compactage",
